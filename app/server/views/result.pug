@@ -1,0 +1,26 @@
+
+extends layout
+
+block content
+	.container
+		#result
+			.user-logo
+				img(src="/images/user.svg")
+
+			.user-info
+				.short-title Your Account
+				.phone-title Phone
+				.phone-input
+					.phone-valid
+					input.form-control(type='text', value=phone_number)
+
+		.btn-block
+			a(href=home_url)
+				button.btn.btn-default.btn-done(type='button') Done
+
+
+			
+
+
+
+

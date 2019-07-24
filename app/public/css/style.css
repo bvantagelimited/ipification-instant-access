@@ -1,0 +1,160 @@
+@import url("https://rsms.me/inter/inter.css");
+body * {
+  font-family: 'Inter', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+#login {
+  position: relative;
+}
+#login .app-logo {
+  position: relative;
+  background-color: #f8f8ff;
+  text-align: center;
+  height: 301px;
+}
+#login .app-logo img {
+  margin-top: 92px;
+}
+#login .app-name {
+  text-align: center;
+  margin-top: 40px;
+}
+#login .app-name .short-title {
+  font-size: 16px;
+  color: #6d6d6d;
+}
+#login .app-name .title {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn-block {
+  width: 100%;
+  padding: 0px 36px;
+  position: absolute;
+  bottom: 36px;
+  left: 0;
+}
+.btn-block .btn-login {
+  width: 100%;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  height: 54px;
+  border: none;
+  padding: 10px 30px 10px 30px;
+  color: #fff;
+  background: linear-gradient(-45deg, transparent 10px, #ed008c 10px);
+}
+.btn-block .btn-login:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-block .btn-login:hover {
+  background: linear-gradient(-45deg, transparent 10px, rgba(237,0,140,0.85) 10px);
+}
+.btn-block .btn-done {
+  width: 100%;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  height: 54px;
+  border: 1px solid #ed008c;
+  padding: 10px 30px 10px 30px;
+  color: #ed008c;
+  background: #fff;
+}
+.btn-block .btn-done:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-block .footer-block {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 36px;
+  color: #b1b1b1;
+}
+#result {
+  position: relative;
+}
+#result .user-logo {
+  position: relative;
+  background-color: #f8f8ff;
+  text-align: center;
+  height: 301px;
+}
+#result .user-logo img {
+  margin-top: 92px;
+}
+#result .user-info {
+  padding: 35px;
+}
+#result .short-title {
+  color: #6d6d6d;
+  font-size: 16px;
+}
+#result .phone-title {
+  color: #bcbcbc;
+  font-size: 16px;
+  margin-top: 36px;
+}
+#result .phone-input {
+  position: relative;
+}
+#result .phone-input input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #b7b7b7;
+  border-radius: unset;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  color: #000;
+  padding: 10px 0px;
+  font-size: 14px;
+}
+#result .phone-input input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#result .phone-input ::placeholder {
+  color: #a0abfb;
+}
+#result .phone-input .phone-valid {
+  position: absolute;
+  right: 0px;
+  background-image: url("../images/valid.svg");
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  top: 8px;
+}
+@media (max-width: 768px) {
+  #login .form-login {
+    width: 95%;
+  }
+}
+@media (min-width: 768px) {
+  #login {
+    width: 100%;
+  }
+  .container {
+    max-width: 390px;
+    height: 100vh;
+    position: relative;
+  }
+  body {
+    height: 100vh;
+  }
+}

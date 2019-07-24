@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+	head
+		title= page_title
+		link(rel="stylesheet", href=`${ROOT_URL}/vendor/bootstrap/4.0.0/bootstrap.min.css`)
+		link(rel='stylesheet', href=`${ROOT_URL}/css/animate.css`)
+		link(rel='stylesheet', href=`${ROOT_URL}/css/style.css`)
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no')
+		meta(name='apple-mobile-web-app-capable' content='yes')
+		meta(name='apple-mobile-web-app-status-bar-style' content='black')
+		meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+		meta(name='ROOT_URL', content=ROOT_URL)
+	body
+		div#ROOT_URL(style='display: none', url=ROOT_URL)
+		block content
+		script(src=`${ROOT_URL}/js/base.js`)
+		script(src=`${ROOT_URL}/js/login.js`)
+		block scripts

@@ -1,0 +1,27 @@
+{
+  "name": "ip-login",
+  "version": "1.0.1",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.18.3",
+    "config": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "^4.1.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "nocache": "^2.1.0",
+    "pug": "^2.0.3",
+    "request": "^2.88.0",
+    "stylus": "^0.54.5",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "version": "echo $npm_package_version",
+    "start": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
