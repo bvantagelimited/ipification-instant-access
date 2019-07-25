@@ -19,7 +19,7 @@
   },
   "scripts": {
     "version": "echo $npm_package_version",
-    "start": "nodemon app.js"
+    "start": "nodemon instant-access.js"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"

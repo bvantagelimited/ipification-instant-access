@@ -3,13 +3,15 @@ extends layout
 
 block content
 	.container
-		#login
-			.app-logo
-				img(src="/images/logo.svg")
+		.row
+			.col-sm-12
+				#login
+					.app-logo
+						img(src="/images/logo.svg")
 
-			.app-name
-				.short-title Register with
-				.title TELEKOM ME
+					.app-name
+						.short-title Register with
+						.title TELEKOM ME
 
 		.btn-block
 			a(href=authUrl)

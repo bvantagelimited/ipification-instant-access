@@ -144,6 +144,9 @@ body {
   #login .form-login {
     width: 95%;
   }
+  .container {
+    padding: 0px;
+  }
 }
 @media (min-width: 768px) {
   #login {
