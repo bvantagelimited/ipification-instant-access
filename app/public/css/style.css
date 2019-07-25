@@ -50,6 +50,7 @@ body {
   padding: 10px 30px 10px 30px;
   color: #fff;
   background: linear-gradient(-45deg, transparent 10px, #ed008c 10px);
+  cursor: pointer;
 }
 .btn-block .btn-login:focus {
   outline: none;
