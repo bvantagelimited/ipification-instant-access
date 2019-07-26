@@ -12,12 +12,12 @@ body
 
 	.app-logo{
 		position: relative;
-		background-color: #F8F8FF;
+		background-color: #fff;
 		text-align: center;
 		height: 301px;
 
 		img{
-			margin-top: 92px;
+			margin-top: 120px;
 		}
 	}
 
@@ -33,7 +33,7 @@ body
 		.title{
 			font-size: 30px;
 			font-weight: bold;
-			text-transform: uppercase;
+			text-transform: none;
 		}
 	}
 	
@@ -57,7 +57,7 @@ body
 		border:none;
 		padding: 10px 30px 10px 30px;
 		color: #ffffff;
-		background: linear-gradient(-45deg, transparent 10px, rgba(237, 0, 140, 1) 10px);  
+		background: linear-gradient(-45deg, transparent 10px, #e0007a 10px);  
 		cursor: pointer;
 
 		&:focus{
@@ -67,7 +67,7 @@ body
 		}
 		
 		&:hover { 
-			background: linear-gradient(-45deg, transparent 10px, rgba(237, 0, 140, 0.85) 10px);    
+			background: linear-gradient(-45deg, transparent 10px, rgba(224, 0, 123, 0.85) 10px);    
 		}
 
 	}
@@ -76,12 +76,12 @@ body
 		width: 100%;
 		border-radius: 3px;
 		font-size: 16px;
-		font-weight: 500;
+		font-weight: 600;
 		letter-spacing: 0.1em;
 		height: 54px;
-		border: 1px solid #ED008C;
+		border: 1px solid #e0007a;
 		padding: 10px 30px 10px 30px;
-		color: #ED008C;
+		color: #e0007a
 		background: white;  
 
 		&:focus{
@@ -89,9 +89,11 @@ body
 			-webkit-box-shadow: none;
 			box-shadow: none;
 		}
-		
 
-
+		&:hover { 
+			color: #fff;
+			background: #e0007a;
+		}
 	}
 
 	.footer-block{

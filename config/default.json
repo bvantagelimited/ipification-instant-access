@@ -1,8 +1,8 @@
 {
   "root_url": "http://localhost:3001",
   "page_title": "IPification Instant Access",
-  "realm": "realm_name",
-  "auth-server-url": "https://auth.server.com/auth",
-  "client_id": "webclient2",
-  "client_secret": ""
+  "realm": "ip-test",
+"auth-server-url": "https://stage.ipification.com/auth",
+"client_id": "webclient2",
+"client_secret": "fa48620d-4924-4b2c-9e80-911f96fe55cf"
 }
