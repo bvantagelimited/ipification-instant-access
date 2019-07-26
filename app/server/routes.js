@@ -57,7 +57,7 @@ module.exports = function(app) {
 		let userEndpointURL = auth_server_url + '/realms/' + realm_name + '/protocol/openid-connect/userinfo';
 
 		if(req.query.error){
-			res.status(200).send(req.query.error);
+			res.redirect(getHomeURL());
 			return;
 		}
 
@@ -86,8 +86,9 @@ module.exports = function(app) {
 				phone_number: data.phone_number
 			})
 
-		} catch (error) {
-			res.status(400).send(error.message);
+		} catch (err) {
+			console.error(err);
+			res.redirect(getHomeURL());
 		}
 
 		
@@ -95,7 +96,7 @@ module.exports = function(app) {
 
 	
 	app.get('*', function(req, res) { 
-		res.redirect(`${ROOT_URL}/login`);
+		res.redirect(getHomeURL());
 	});
 
 };
