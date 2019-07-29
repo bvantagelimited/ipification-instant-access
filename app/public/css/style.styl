@@ -70,30 +70,6 @@ body
 
 	}
 
-	.btn-done {
-		width: 100%;
-		border-radius: 3px;
-		font-size: 16px;
-		font-weight: 600;
-		letter-spacing: 0.1em;
-		height: 54px;
-		border: 1px solid #e0007a;
-		padding: 10px 30px 10px 30px;
-		color: #e0007a
-		background: white;  
-
-		&:focus{
-			outline: none;
-			-webkit-box-shadow: none;
-			box-shadow: none;
-		}
-
-		&:hover { 
-			color: #fff;
-			background: #e0007a;
-		}
-	}
-
 	.footer-block{
 		font-size: 14px;
 		text-align: center;
@@ -102,21 +78,21 @@ body
 	}
 }
 
-#result{
-	position: relative;
-	
+.result-container{
+
 	.user-logo{
 		position: relative;
 		background-color: #F8F8FF;
 		text-align: center;
-		height: 301px;
+		width: 100%;
 
 		img{
-			margin-top: 92px;
+			padding: 50px 0;
 		}
 	}
 
 	.user-info{
+		width: 100%;
 		padding: 35px;
 	}
 
@@ -130,43 +106,34 @@ body
 		margin-top: 36px;
 	}
 
-	.phone-input{
-		position: relative;
+	.user-phone{
+		padding: 5px 0px;
+		border-bottom: 1px solid #B7B7B7;
+		background-image: url(../images/valid.svg);
+		background-repeat: no-repeat;
+		background-position: right;
+		color: #000000;
+	}
 
-		input {
-			background-color: transparent;
-			border: none;
-			border-bottom: 1px solid #B7B7B7;
-			border-radius: unset;
+	.btn-done {
+		width: 100%;
+		border-radius: 3px;
+		font-size: 16px;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+		height: 54px;
+		border: 1px solid #ED008C;
+		padding: 10px 30px 10px 30px;
+		color: #ED008C;
+		background: white; 
+		margin-top: 30px; 
+
+		&:focus{
 			outline: none;
 			-webkit-box-shadow: none;
-			-moz-box-shadow: none;
 			box-shadow: none;
-			width: 100%;
-
-			color: #000000;
-			padding: 10px 0px;
-			font-size: 14px;
-
-			&:focus{
-				outline: none;
-				-webkit-box-shadow: none;
-				box-shadow: none;
-			}
-		}
-		::placeholder{
-				color: #A0ABFB;
 		}
 
-		.phone-valid{
-			position: absolute;
-			right: 0px;
-			background-image: url(../images/valid.svg);
-			width: 23px;
-			height: 23px;
-			background-repeat: no-repeat;
-			top: 8px;
-		}
 	}
 }
 
@@ -195,4 +162,24 @@ body
 	body {
 		height  100vh
 	}
+}
+
+@media (max-width: 768px) {
+
+	.user-logo {
+		img{
+			max-height: 175px;
+		}
+	}
+
+	.result-container{
+		width: 100%;
+	}
+}
+@media (min-width: 768px) {
+	
+	.result-container{
+		width: 360px;
+	}
+	
 }

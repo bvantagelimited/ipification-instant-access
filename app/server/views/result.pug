@@ -2,21 +2,19 @@
 extends layout
 
 block content
-	.container
-		#result
-			.user-logo
-				img(src=`${ROOT_URL}/images/user.svg`)
+	.d-flex.justify-content-center
+		.d-flex.align-items-start.flex-column.result-container
+				.user-logo
+					img(src=`${ROOT_URL}/images/user.svg`)
 
-			.user-info
-				.short-title Your Account
-				.phone-title Phone
-				.phone-input
-					.phone-valid
-					input.form-control(type='text', value=phone_number, readonly)
+				.user-info
+					.short-title Your Account
+					.phone-title Phone
+					.user-phone
+						= phone_number
 
-		.btn-block
-			a(href=home_url)
-				button.btn.btn-default.btn-done(type='button') Done
+					a(href=home_url	)
+						button.btn.btn-default.btn-done(type='button') Done
 
 
 			

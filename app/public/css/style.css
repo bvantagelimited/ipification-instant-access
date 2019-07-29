@@ -7,21 +7,16 @@ body {
   padding: 0;
   background: #fff;
 }
-#login {
-  position: relative;
-}
 #login .app-logo {
-  position: relative;
-  background-color: #f8f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
   text-align: center;
-  height: 301px;
-}
-#login .app-logo img {
-  margin-top: 92px;
+  height: 200px;
 }
 #login .app-name {
   text-align: center;
-  margin-top: 40px;
 }
 #login .app-name .short-title {
   font-size: 16px;
@@ -30,7 +25,7 @@ body {
 #login .app-name .title {
   font-size: 30px;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: none;
 }
 .btn-block {
   width: 100%;
@@ -49,7 +44,7 @@ body {
   border: none;
   padding: 10px 30px 10px 30px;
   color: #fff;
-  background: linear-gradient(-45deg, transparent 10px, #ed008c 10px);
+  background: linear-gradient(-45deg, transparent 10px, #e0007a 10px);
   cursor: pointer;
 }
 .btn-block .btn-login:focus {
@@ -58,9 +53,45 @@ body {
   box-shadow: none;
 }
 .btn-block .btn-login:hover {
-  background: linear-gradient(-45deg, transparent 10px, rgba(237,0,140,0.85) 10px);
+  background: linear-gradient(-45deg, transparent 10px, rgba(224,0,123,0.85) 10px);
 }
-.btn-block .btn-done {
+.btn-block .footer-block {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 36px;
+  color: #b1b1b1;
+}
+.result-container .user-logo {
+  position: relative;
+  background-color: #f8f8ff;
+  text-align: center;
+  width: 100%;
+}
+.result-container .user-logo img {
+  padding: 50px 0;
+}
+.result-container .user-info {
+  width: 100%;
+  padding: 35px;
+}
+.result-container .short-title {
+  color: #6d6d6d;
+  font-size: 16px;
+}
+.result-container .phone-title {
+  color: #bcbcbc;
+  font-size: 16px;
+  margin-top: 36px;
+}
+.result-container .user-phone {
+  padding: 5px 0px;
+  border-bottom: 1px solid #b7b7b7;
+  background-image: url("../images/valid.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  color: #000;
+}
+.result-container .btn-done {
   width: 100%;
   border-radius: 3px;
   font-size: 16px;
@@ -71,75 +102,12 @@ body {
   padding: 10px 30px 10px 30px;
   color: #ed008c;
   background: #fff;
+  margin-top: 30px;
 }
-.btn-block .btn-done:focus {
+.result-container .btn-done:focus {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-.btn-block .footer-block {
-  font-size: 14px;
-  text-align: center;
-  margin-top: 36px;
-  color: #b1b1b1;
-}
-#result {
-  position: relative;
-}
-#result .user-logo {
-  position: relative;
-  background-color: #f8f8ff;
-  text-align: center;
-  height: 301px;
-}
-#result .user-logo img {
-  margin-top: 92px;
-}
-#result .user-info {
-  padding: 35px;
-}
-#result .short-title {
-  color: #6d6d6d;
-  font-size: 16px;
-}
-#result .phone-title {
-  color: #bcbcbc;
-  font-size: 16px;
-  margin-top: 36px;
-}
-#result .phone-input {
-  position: relative;
-}
-#result .phone-input input {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #b7b7b7;
-  border-radius: unset;
-  outline: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  width: 100%;
-  color: #000;
-  padding: 10px 0px;
-  font-size: 14px;
-}
-#result .phone-input input:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-#result .phone-input ::placeholder {
-  color: #a0abfb;
-}
-#result .phone-input .phone-valid {
-  position: absolute;
-  right: 0px;
-  background-image: url("../images/valid.svg");
-  width: 23px;
-  height: 23px;
-  background-repeat: no-repeat;
-  top: 8px;
 }
 @media (max-width: 768px) {
   #login .form-login {
@@ -160,5 +128,18 @@ body {
   }
   body {
     height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  .user-logo img {
+    max-height: 175px;
+  }
+  .result-container {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .result-container {
+    width: 360px;
   }
 }
