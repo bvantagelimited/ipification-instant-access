@@ -9,21 +9,26 @@ body {
 }
 #login .app-logo {
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #fff;
   text-align: center;
-  height: 200px;
+  height: 266px;
+  background: #f8f8ff 0% 0% no-repeat padding-box;
+  padding-top: 76px;
+}
+#login .app-logo img {
+  width: 142px;
+  height: 190px;
 }
 #login .app-name {
-  text-align: center;
+  padding-left: 36px;
+  padding-top: 36px;
 }
 #login .app-name .short-title {
   font-size: 16px;
   color: #6d6d6d;
 }
 #login .app-name .title {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold;
   text-transform: none;
 }
@@ -44,16 +49,13 @@ body {
   border: none;
   padding: 10px 30px 10px 30px;
   color: #fff;
-  background: linear-gradient(-45deg, transparent 10px, #e0007a 10px);
+  background: linear-gradient(-45deg, transparent 10px, #007aff 10px);
   cursor: pointer;
 }
 .btn-block .btn-login:focus {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-.btn-block .btn-login:hover {
-  background: linear-gradient(-45deg, transparent 10px, rgba(224,0,123,0.85) 10px);
 }
 .btn-block .footer-block {
   font-size: 14px;
@@ -98,9 +100,9 @@ body {
   font-weight: 500;
   letter-spacing: 0.1em;
   height: 54px;
-  border: 1px solid #ed008c;
+  border: 1px solid #007aff;
   padding: 10px 30px 10px 30px;
-  color: #ed008c;
+  color: #007aff;
   background: #fff;
   margin-top: 80px;
 }
