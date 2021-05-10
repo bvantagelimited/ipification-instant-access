@@ -6,7 +6,7 @@ const axios = require("axios");
 const appConfig = require('config');
 const _ = require('lodash');
 const ROOT_URL = appConfig.get('root_url');
-const uuidv4 = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 
 const auth_server_url = appConfig.get('auth-server-url');
 const realm_name = appConfig.get('realm');
