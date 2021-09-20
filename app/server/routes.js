@@ -1,6 +1,5 @@
 const querystring = require('querystring');
 const debug = require('debug')('info');
-const request = require('request');
 const qs = require('qs');
 const axios = require("axios");
 const appConfig = require('config');
