@@ -11,11 +11,11 @@
     "start": "nodemon instant-access.js"
   },
   "dependencies": {
-    "axios": "^0.21.4",
+    "axios": "^0.24.0",
     "body-parser": "^1.19.0",
     "config": "^3.3.6",
-    "cookie-parser": "^1.4.5",
-    "debug": "^4.3.2",
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.3",
     "express": "^4.17.1",
     "lodash": "^4.17.21",
     "nocache": "^3.0.1",
@@ -24,6 +24,6 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.15"
   }
 }
